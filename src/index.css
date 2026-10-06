@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@keyframes flow {
+  from {
+    stroke-dashoffset: 28;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flow-reverse {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 28;
+  }
+}
+
+.animate-flow {
+  animation: flow 0.6s linear infinite;
+}
+
+.animate-flow-reverse {
+  animation: flow-reverse 0.6s linear infinite;
+}
